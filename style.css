@@ -1,0 +1,270 @@
+	/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/*
+ * Init styles
+ */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*
+ * seção cabeçalho
+ */
+.header {
+	width: 100%;
+	background-color: #3E4095;
+	text-align: center;
+	color: #fff;
+}
+.site-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 1em 0;
+}
+
+/*
+ * seção de navegação principal
+ */
+.nav {
+	height: 2.7em;
+	overflow: hidden;
+	background-color: #00A859;
+	color: #fff;
+
+	-webkit-transition: height 1s;
+       -moz-transition: height 1s;
+     	-ms-transition: height 1s;
+	     -o-transition: height 1s;
+	        transition: height 1s;
+}
+.nav:hover {
+	height: 16.9em;
+
+	-webkit-transition: height 1s;
+       -moz-transition: height 1s;
+     	-ms-transition: height 1s;
+	     -o-transition: height 1s;
+	        transition: height 1s;
+}
+.nav-title {
+	padding: 1em .5em .5em .5em;
+	font-weight: bold;
+}
+.nav-li {
+	border-bottom: 1px solid #fff;
+}
+.nav-li:last-child {
+	border: 0;
+}
+.nav-a {
+	display: block;
+	padding: .5em 1em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+.nav-a:hover {
+	background-color: #fff;
+	color: #00A859;
+
+	transition: background-color, color 0.6s ease-out;
+}
+
+@media all and (min-width: 480px) { /* >= 480px */
+	.nav {
+		width: 30%;
+		float: left;
+		height: auto;
+	}
+	.nav:hover {
+		height: auto;
+	}
+	.main {
+		width: 70%;
+		float: left;
+	}
+	.news {
+		width: 70%;
+		float: right;
+		background-color: #fff;
+	}
+	.footer {
+		clear: both;
+	}
+	.header {
+		background-image: url(images/body.jpg);
+	}
+	.site-title {
+		text-shadow: 1px 3px 5px #000;
+		font-size: 2em;
+		color: #00A859;
+	}
+	body {
+		background-color: #00A859;
+	}
+}
+
+/*
+ * Seção de conteúdo principal
+ */
+.main {
+	background-color: #FF0;
+}
+.main-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: #3E4095;
+}
+.title-one {
+	padding: .3em 0 .3em 0;
+}
+.title-two {
+	padding: 0 0 .2em 0;
+}
+.main-article {
+	padding-bottom: 2em;
+	border-bottom: 1px solid #3E4095;
+}
+.main-article-title {
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 1em 0;
+}
+.main-article-text {
+	line-height: 1.3em;
+}
+
+@media all and (min-width: 1000px) { /* >=1000px */
+	.nav {
+		width: 17%;
+		float: left;
+	}
+	.main {
+		margin: 0 1.5%;
+		width: 60%;
+		float: left;
+	}
+	.news {
+		width: 20%;
+		float: right;
+	}
+	body {
+		background-image: url(images/body.jpg);
+	}
+}
+
+/*
+ * Seção de novidades
+ */
+.news {
+}
+.news-title {
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: center;
+	color: #3E4095;
+	padding: .7em 0 0 0;
+}
+.news-article {
+	border-bottom: 1px solid #3E4095;
+	padding: 1em 0;
+}
+.news-article-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: .4em 0;
+}
+.news-article-info {
+	font-size: .8em;
+}
+.news-article-text {
+	padding: .4em 0;
+	line-height:1.2em;
+}
+.news-article a {
+	text-decoration: none;
+	color: #00F;
+}
+.news-article a:hover {
+	text-decoration: underline;
+}
+
+/*
+ * Seção de rodapé
+ */
+.footer {
+	background-color: #3E4095;
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+}
