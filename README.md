@@ -1,2 +1,2 @@
 # Web Design Responsivo
-> book from Maurício Samy Silva
+> Book from Maurício Samy Silva
